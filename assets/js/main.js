@@ -1396,3 +1396,10 @@ window.addEventListener('click', function(event) {
 
 // Event listener for close button click
 document.querySelector('.close').addEventListener('click', closePopup);
+
+
+// for scrolling to a section ---------------------
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
